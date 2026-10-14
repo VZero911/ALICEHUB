@@ -21,6 +21,13 @@
 
 ---
 
+## Architecture
+
+<p align="center">
+  <img src="screenshots/alicehub-master.png" alt="ALICEHUB — Master Controller" width="860" />
+</p>
+<p align="center"><sub>ALICEHUB master controller — 8 services, hub relay, node mesh, CDT ledger</sub></p>
+
 ## What is ALICEHUB?
 
 The master controller that connects and coordinates all V0 components into a unified stack:
@@ -32,47 +39,6 @@ The master controller that connects and coordinates all V0 components into a uni
 - **Task Dispatch** — route tasks to the best available node
 - **Module Registry** — centralized index of all connected modules
 
-## Architecture
-
-```
-                    ┌─────────────────────┐
-                    │     ALICEHUB        │
-                    │   Master Controller │
-                    │      :7790          │
-                    └──────────┬──────────┘
-                               │
-         ┌─────────────────────┼─────────────────────┐
-         │                     │                     │
-┌────────▼────────┐  ┌────────▼────────┐  ┌─────────▼─────────┐
-│  ALICE-MASTER   │  │  ALICE-GENERAL  │  │  TRUE-ALICE       │
-│     :7780       │  │     :7781       │  │     :7782         │
-└────────┬────────┘  └────────┬────────┘  └─────────┬─────────┘
-         │                     │                     │
-         └─────────────────────┼─────────────────────┘
-                               │
-             ┌─────────────────┼─────────────────┐
-             │                 │                 │
-    ┌────────▼──────┐  ┌──────▼──────┐  ┌───────▼───────┐
-    │  THESEED L0   │  │    TOA      │  │  MCP Server   │
-    │  Anvil :8545  │  │   :7784     │  │  36 tools     │
-    └───────────────┘  └─────────────┘  └───────────────┘
-```
-
-## API
-
-| Endpoint | Method | Description |
-|---|---|---|
-| `/health` | GET | Health check |
-| `/status` | GET | Full hub status with all nodes |
-| `/api/hub/register` | POST | Register a hub or service |
-| `/api/hub/modules` | GET | List all connected modules |
-| `/api/hub/task` | POST | Submit task for dispatch |
-| `/api/hub/nodes` | GET | Node mesh status |
-| `/api/cdt/ledger` | GET | CDT/CPT/TKN balances |
-| `/api/cdt/supply` | GET | Token supply stats |
-| `/api/cdt/transfer` | POST | Transfer tokens |
-| `/api/services/health` | GET | Aggregated service health |
-
 ## Token Economy
 
 | Token | Purpose | Genesis Supply |
@@ -81,11 +47,14 @@ The master controller that connects and coordinates all V0 components into a uni
 | **CPT** | Compute Power Token — earned by providing compute | 500K |
 | **TKN** | Generic delegation token — task rewards | 1M |
 
+All tokens on L0 chain 31337 — zero external blockchain dependencies.
+
 ## Related
 
 <p align="center">
   <a href="https://github.com/VZero911/A.L.I.C.E"><img src="https://img.shields.io/badge/A.L.I.C.E-AI%20Framework-00ffcc?style=for-the-badge&logo=github&labelColor=07060f" alt="ALICE" /></a>
   <a href="https://github.com/VZero911/THESEED"><img src="https://img.shields.io/badge/THESEED-Blockchain%20%2F%20Data-f2c14e?style=for-the-badge&logo=github&labelColor=07060f" alt="THESEED" /></a>
+  <a href="https://github.com/VZero911/THEROOT"><img src="https://img.shields.io/badge/THEROOT-Kernel%20%2F%20Infra-ea4335?style=for-the-badge&logo=github&labelColor=07060f" alt="THEROOT" /></a>
   <a href="https://github.com/VZero911/MCP"><img src="https://img.shields.io/badge/MCP-Server-8f6cf0?style=for-the-badge&logo=github&labelColor=07060f" alt="MCP" /></a>
   <a href="https://github.com/VZero911/AGENTS"><img src="https://img.shields.io/badge/AGENTS-Public%20Nodes-5fd38d?style=for-the-badge&logo=github&labelColor=07060f" alt="AGENTS" /></a>
 </p>
