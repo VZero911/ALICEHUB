@@ -16,6 +16,7 @@
   <img src="https://img.shields.io/badge/React-TSX-61dafb?style=flat-square&logo=react&logoColor=white&labelColor=07060f" />
   <img src="https://img.shields.io/badge/aiohttp-Server-2496ED?style=flat-square&labelColor=07060f" />
   <img src="https://img.shields.io/badge/CDT%2FCPT%2FTKN-Ledger-f2c14e?style=flat-square&labelColor=07060f" />
+  <img src="https://img.shields.io/badge/255+-MCP%20Tools-5fd38d?style=flat-square&labelColor=07060f" />
   <img src="https://img.shields.io/badge/License-MIT-c0caf5?style=flat-square&labelColor=07060f" />
 </p>
 
@@ -26,7 +27,7 @@
 <p align="center">
   <img src="screenshots/alicehub-master.png" alt="ALICEHUB — Master Controller" width="860" />
 </p>
-<p align="center"><sub>ALICEHUB master controller — 8 services, hub relay, node mesh, CDT ledger</sub></p>
+<p align="center"><sub>ALICEHUB master controller — 9 connected hubs, 255+ MCP tools, CDT ledger, LASU live sync</sub></p>
 
 ## What is ALICEHUB?
 
@@ -38,6 +39,21 @@ The master controller that connects and coordinates all V0 components into a uni
 - **Service Aggregator** — proxy health checks across all running services
 - **Task Dispatch** — route tasks to the best available node
 - **Module Registry** — centralized index of all connected modules
+- **LASU Live Sync** — all components synced in real-time (Live, Auto, Sync, Update)
+
+## Connected Hubs
+
+| Hub | Description | Status |
+|---|---|---|
+| **NETHUB** | Isolated browser — Ghost Protocol | Active |
+| **GAMEHUB** | Game library & launcher | Active |
+| **SOCIALHUB** | Internal comms — Discord++ style | Active |
+| **PCHUB** | Hardware visualization — 2.5D | Active |
+| **MCP** | 255+ AI Agent tools | Active |
+| **THESEED** | Blockchain — L0 chain 31337 | Active |
+| **THEROOT** | Kernel & infrastructure backbone | Active |
+| **AGENTS** | Autonomous public node agents | Active |
+| **BERSERK** | Cyber Engine — security & defense | Active |
 
 ## Token Economy
 
@@ -49,14 +65,28 @@ The master controller that connects and coordinates all V0 components into a uni
 
 All tokens on L0 chain 31337 — zero external blockchain dependencies.
 
+## Metrics
+
+| Metric | Value |
+|---|---|
+| MCP Tools | 255+ |
+| Norms | 94 |
+| Protocols | 91 |
+| Security Entries | 363 |
+| Docker Containers | 7 (all healthy) |
+| Blockchain Chains | 3 (L0, TRINITY, Anvil) |
+| GitHub Repos | 13 |
+
 ## Related
 
 <p align="center">
   <a href="https://github.com/VZero911/A.L.I.C.E"><img src="https://img.shields.io/badge/A.L.I.C.E-AI%20Framework-00ffcc?style=for-the-badge&logo=github&labelColor=07060f" alt="ALICE" /></a>
   <a href="https://github.com/VZero911/THESEED"><img src="https://img.shields.io/badge/THESEED-Blockchain%20%2F%20Data-f2c14e?style=for-the-badge&logo=github&labelColor=07060f" alt="THESEED" /></a>
   <a href="https://github.com/VZero911/THEROOT"><img src="https://img.shields.io/badge/THEROOT-Kernel%20%2F%20Infra-ea4335?style=for-the-badge&logo=github&labelColor=07060f" alt="THEROOT" /></a>
-  <a href="https://github.com/VZero911/MCP"><img src="https://img.shields.io/badge/MCP-Server-8f6cf0?style=for-the-badge&logo=github&labelColor=07060f" alt="MCP" /></a>
+  <a href="https://github.com/VZero911/MCP"><img src="https://img.shields.io/badge/MCP-255+%20Tools-8f6cf0?style=for-the-badge&logo=github&labelColor=07060f" alt="MCP" /></a>
   <a href="https://github.com/VZero911/AGENTS"><img src="https://img.shields.io/badge/AGENTS-Public%20Nodes-5fd38d?style=for-the-badge&logo=github&labelColor=07060f" alt="AGENTS" /></a>
+  <a href="https://github.com/VZero911/NETHUB"><img src="https://img.shields.io/badge/NETHUB-Browser-ff6600?style=for-the-badge&logo=github&labelColor=07060f" alt="NETHUB" /></a>
+  <a href="https://github.com/VZero911/GAMEHUB"><img src="https://img.shields.io/badge/GAMEHUB-Games-ff6600?style=for-the-badge&logo=github&labelColor=07060f" alt="GAMEHUB" /></a>
 </p>
 
 ---
