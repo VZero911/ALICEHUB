@@ -53,7 +53,7 @@ The master controller that connects and coordinates all V0 components into a uni
 | **THESEED** | Blockchain — L0 chain 31337 | Active |
 | **THEROOT** | Kernel & infrastructure backbone | Active |
 | **AGENTS** | Autonomous public node agents | Active |
-| **BERSERK** | Cyber Engine — security & defense | Active |
+| **CYBER ENGINE** | Security & defense | Active |
 
 ## Token Economy
 
@@ -74,7 +74,7 @@ All tokens on L0 chain 31337 — zero external blockchain dependencies.
 | Protocols | 91 |
 | Security Entries | 363 |
 | Docker Containers | 7 (all healthy) |
-| Blockchain Chains | 3 (L0, TRINITY, Anvil) |
+| Blockchain Chains | 2 (L0, Anvil) |
 | GitHub Repos | 13 |
 
 ## Related
